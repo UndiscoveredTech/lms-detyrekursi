@@ -1,9 +1,4 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+ 
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -24,10 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="main">
 		<div class="login-form">
 			<h1>ADMIN LOGIN</h1>
-					<div class="head">
 					
-					<img src="web/images/user.png" alt=""/>
-					</div>
 				<form action="admin_login_proces.php" method="post">
 						<input type="text" id="logintxt" name="username" placeholder="USER NAME" required="required" />
 						<input type="password" id="logintxt" name="password" placeholder="PASSWORD" required="required"/>

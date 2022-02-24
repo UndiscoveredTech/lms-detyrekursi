@@ -22,15 +22,7 @@ session_start();
     <script type='text/javascript' src="web/js/jquery.easing.1.3.js"></script> 
     <script type='text/javascript' src="web/js/camera.min.js"></script> 
   	</script>
-    <style type="text/css">
-<!--
-.style1 {color: #0000FF}
-.style2 {font-family: "Bookman Old Style"}
-.style3 {font-family: "Comic Sans MS"}
-.style4 {font-family: "Comic Sans MS"; color: #FF00FF; }
-.style5 {font-family: "Comic Sans MS"; color: #0000FF; }
--->
-    </style>
+ 
 </head>
 <body>
 <div class="wrap">
@@ -58,29 +50,7 @@ session_start();
     
     <div class="main">
       <div class="clear">
-        <style type="text/css">
-<!--
-img
-{
-
-}
-.style1 {color: #0000FF}
-.style2 {
-	color: #FF0000;
-	font-family: "Courier New", Courier, monospace;
-}
-.style3 {font-family: Arial, Helvetica, sans-serif}
-.style5 {color: #0000FF; font-family: Arial, Helvetica, sans-serif; }
-.style20 {color: #00CC66; font-family: "Bookman Old Style";}
-.style21 {color: #00CC66}
-.style22 {
-	font-family: "Comic Sans MS";
-	font-size: 18px;
-	color: #993333;
-}
-.style24 {color: #6633CC; font-family: "Lucida Calligraphy"; font-size: 20px;}
--->
-        </style>
+ 
         <table width="688" border="0" align="center">
           <tr>
             <td width="222"><?PHP echo '<h2 class="style22"> Welcome</h2>';?></td>

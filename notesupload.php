@@ -18,7 +18,7 @@
 <style>
 .text
 {
-  font-family:"Comic Sans MS";
+   
   font-size:16x;
   color:#000099;
 }

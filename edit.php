@@ -32,7 +32,7 @@ session_start();
  .copyrite
  {
         margin-top:20px;
-       font-family:"Bookman Old Style";
+        
 	   font-size:16px;  
        text-align:center;
   }
@@ -69,7 +69,7 @@ session_start();
   height:100px;
   text-align:center;
   font-size:72px;
-  font-family:"Bookman Old Style";
+   
   color:#21A957;
   text-transform:uppercase;
  }
@@ -112,7 +112,7 @@ session_start();
 }
 .flat-table
  {
-  font-family:"Comic Sans MS";
+   
   -webkit-font-smoothing: antialiased;
   font-size: 115%;
   margin-left:50px;
@@ -134,7 +134,7 @@ session_start();
     text-shadow: 1px 0px 20px red;
 	color: #000000;
 	font-weight: bold;
-	font-family:"Bookman Old Style";
+	 
 	text-align:left; 
   }
    .heading
@@ -145,7 +145,7 @@ session_start();
 }
   .heading  h1
   {
-   	font-family:"Times New Roman", Times, serif;
+   	 
 	letter-spacing:0px;
 	text-align:center;
 	font-size: 5.5em;

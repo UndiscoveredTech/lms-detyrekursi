@@ -34,7 +34,7 @@ session_start();
 	 .copyrite
      {
         margin-top:20px;
-       font-family:"Bookman Old Style";
+        
 	   font-size:16px;  
        text-align:center;
      }
@@ -63,7 +63,7 @@ session_start();
         font-weight: normal;
         text-align: center;
 		text-transform: uppercase;
-		font-family:"Bookman Old Style";
+		 
 		margin-top:5px;
 	}	
 	.topic_head
@@ -78,7 +78,7 @@ session_start();
 	.topic_head h1
 	{
 	   
-		font-family:"Comic Sans MS";
+		 
 		font-size:24px;
 		font-weight:300;
 		margin-top:8px;
@@ -89,7 +89,7 @@ session_start();
 	.topic_head h1
 	{
 	   
-		font-family:"Comic Sans MS";
+		 
 		font-size:24px;
 		font-weight:300;
 		margin-top:8px;

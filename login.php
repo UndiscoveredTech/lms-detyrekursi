@@ -37,9 +37,7 @@
 <div class="main">
 		<div class="login-form">
 			<h1>USER LOGIN</h1>
-					<div class="head">
-						<img src="web/images/user.png" alt=""/>
-					</div>
+					
 				<form action="loginproces.php" method="post">
 						<input type="text" id="logintxt" name="username" placeholder="USER NAME" required="required" />
 						<input type="password" id="logintxt" name="password" placeholder="PASSWORD" required="required"/>

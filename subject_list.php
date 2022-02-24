@@ -40,7 +40,7 @@
 .flat-table
  {
   display: block;
-  font-family:"Comic Sans MS";
+   
   -webkit-font-smoothing: antialiased;
   font-size: 115%;
   overflow: auto;
@@ -61,7 +61,7 @@
   {
     background: #D4E7F5;
 	color: rgb(111, 111, 111);
-	font-family:"Bookman Old Style";
+	 
 	border:1px groove #85E8EF;
 	padding: 10px;
 	text-align:left; 
@@ -71,7 +71,7 @@
      background:#B5E3E6;
 	 color: rgb(111, 111, 111);
 	 border:1px groove #D4E7F5;
-	 font-family:"Bookman Old Style";
+	  
 	 padding: 10px;
 	 text-align:left; 
   }

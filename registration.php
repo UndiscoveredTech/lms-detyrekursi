@@ -1,216 +1,172 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
-<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!--slider-->
-<link href="web/css/camera.css" rel="stylesheet" type="text/css" media="all" />
-    <script type='text/javascript' src="web/js/jquery.min.js"></script>
-    <script type='text/javascript' src="web/js/jquery.mobile.customized.min.js"></script>
-    <script type='text/javascript' src="web/js/jquery.easing.1.3.js"></script> 
-    <script type='text/javascript' src="web/js/camera.min.js"></script> 
-      
-	  
-	  
-	  
-	  <style>
-	  table
-	  {
-	  	background:url(web/images/tbl1.jpg) no-repeat ;
-		border-radius:30px;
-		background-size:950px;
-		
-	  }
-.style3 {color: #FFFFFF; font-weight: bold; }
-.style-login
-{
-              font-weight: bold; 
-              font-family: "Lucida Calligraphy";
-			  font-size: 20px;
-	       	  color: rgb(164, 175, 32);
-			 }
-
-
-.style5 {
-	color: #660000;
-	font-weight: bold;
-	font-family: "Comic Sans MS";
-	font-size: 24px;
+ <html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+     <!--slider-->
+     <link href="web/css/camera.css" rel="stylesheet" type="text/css" media="all" />
+     <script type='text/javascript' src="web/js/jquery.min.js"></script>
+     <script type='text/javascript' src="web/js/jquery.mobile.customized.min.js"></script>
+     <script type='text/javascript' src="web/js/jquery.easing.1.3.js"></script>
+     <script type='text/javascript' src="web/js/camera.min.js"></script>
+     <style>
+* {
+  box-sizing: border-box;
 }
 
-	.submot_btn
-	{
-		width:120px;
-		height:30px;
-		background-color:rgb(164, 175, 32);
-		color:#FFFFFF;border-radius:5px;
-	}
-.style8 {
-	font-family: "Bookman Old Style";
-	font-weight: bold;
-	font-size: 18px;
-	color: #FF0000;
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
 }
-#regtxt{
-	text-align:left;
-	position: relative;
-	width:75%;
-	padding:3px;
-	background:#D3D3D3;
-	font-family: 'Open Sans', sans-serif;
-	color: #676767;
-	font-weight:600;
-	font-size: 16px;
-	outline: none;
-	border: none;
-	border-radius: 5px;
-	border:1px solid #DED6D6;
-	-webkit-appearance:none;
 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
- #regtxt:hover{
- 	border:1px solid #949494;
-	transition:0.5s;
-	-webkit-transition:0.5s;
-	-moz-transition:0.5s;
-	-o-transition:0.5s;
-	-ms-transition:	0.5s;
- 	
- }
-      </style>
-</head>
-<body>
-<div class="wrap">
-<div class="wrapper">
-<div class="logo">
-	<a href="index.php"><h1>Tute</h1></a>
-</div>
-<div class="header_right">
-	<div class="cssmenu">
-		<ul>
-		  	<li class="has-sub"><a href="index.php"><span>Home</span></a></li>
-			<li><a href="login.php"><span>Login</span></a></li>
-			<li class="active"><a href="registration.php"><span>Registration</span></a></li>
-			<li class="last"><a href="contact.php"><span>Contact</span></a></li>
-			<div class="clear"></div>
-		 </ul>
-	</div>
-</div>
-	<div class="clear"></div>
-</div>
-</div>
-<div align="center">
-<form action="store.php" method="post" enctype="multipart/form-data">
- <table id="reg" width="71%" height="562" border="0" cellpadding="2" cellspacing="2" rules="rows">
-                   <tr>
-                     <td height="19" colspan="5" align="center">&nbsp;</td>
-                   </tr>
-                   <tr>
-                     <td height="29" colspan="5" align="center"><h1 class="style5 ">REGISTRATION </h1></td>
-                   </tr>
-                   <tr>
-                     <td height="19" colspan="5" align="center">&nbsp;</td>
-                   </tr>
-                   <tr>
-                     <td width="6%" height="36">&nbsp;</td>
-                     <td width="19%"><span class="style3">FIRST NAME  </span></td>
-                     <td width="28%"><input name="fn" type="text" size="25" placeholder="FIRST NAME" required /></td>
-                    
-                      
-                   </tr>
-                   <tr>
-                     <td>&nbsp;</td>
-					 <td width="19%"><span class="style3">LAST NAME </span></td>
-                     <td width="28%">
-                     <input name="ln" type="text" size="25" placeholder="LAST NAME" required="required"/>                     </td>
-                     
-                     
-                     
-                   </tr>
-                   <tr>
-                     
-                     
-                     <td height="33"><span class="style3">COURSE</span></td>
-                     <td>
-                         <select name="course">
-                           <option value="MCA" >MCA</option>
-                           <option value="MSc" >MSc</option>
-                           <option value="MTech" >MTech</option>
-                         </select>                     </td>
-                   </tr>
-                   <tr>
-                     <td>&nbsp;</td>
-					 <td><span class="style3">GENDER</span></td>
-                     <td><input name="gender" type="radio" value="MALE"/>
-                       <span class="style3">MALE</span>
-                       <input name="gender" type="radio" value="FEMALE">
-                     <span class="style3">FEMALE</span></td>
-                      
-      </tr>
-                   <tr>
-                     <td height="38">&nbsp;</td>
-                    
-                     <td><span class="style3">REGISTER NUMBER </span></td>
-                     <td>
-                         <input name="reg" type="text" size="25" placeholder="REGISTER NO" required="required"/>                     </td>
-                   </tr>
-                   <tr>
-                     <td height="35">&nbsp;</td>
-                     
-                     <td colspan="2" align="center"><span class=".style-login style8">LOGIN DETAILS </span></td>
-                   </tr>
-                   <tr>
-                     <td>&nbsp;</td>
-                     
-                     <td><span class="style3">USER NAME </span></td>
-                     <td>
-                         <input type="text" name="username" placeholder="USER NAME" required="required" />                     </td>
-                   </tr>
-                   <tr>
-                     <td>&nbsp;</td>
-                     <td><span class="style3">MOBILE NUMBER </span></td>
-                     <td><input name="phno" type="text" size="25" placeholder="MOBILE NUMBER" required="required"/>                     </td>
-                     <td><span class="style3">PASSWORD</span></td>
-                     <td>
-                         <input name="pw" type="password" size="25" placeholder="PASSWORD" required="required"/>                     </td>
-                   </tr>
-                   <tr>
-                     <td height="38">&nbsp;</td>
-                     <td><span class="style3">EMAIL ID </span></td>
-                     <td><input type="email" name="email" placeholder="EMAIL ADDRESS" required="required" />                     </td>
-                     <td><span class="style3">CONFIRM PASSWORD</span></td>
-                    <td> <input name="cpw" type="password" size="25" placeholder="CONFIRM PASSWORD" required="required"/>                     </td>
-                   </tr>
-                   <tr>
-                     <td height="24">&nbsp;</td>
-                     <td><span class="style3">PROFILE PHOTO </span></td>
-                     <td><input type="file" name="profile" /></td>
-                     <td align="center">&nbsp;</td>
-                     <td >&nbsp;</td>
-                   </tr>
-				   <tr>
-                     <td height="38">&nbsp;</td>
-                     <td>&nbsp;</td>
-                     <td align="center"><input name="submit" type="submit" value="REGISTER" /></td>
-                     <td ><input name="reset" type="reset" value="CLEAR" /></td>
-                     <td >&nbsp;</td>
-                   </tr>
-                   <tr>
-                     <td colspan="5">&nbsp;</td>
-                   </tr>
-    </table>
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+     </style>
+   </head>
+   <body>
+     <div class="wrap">
+       <div class="wrapper">
+         <div class="logo">
+           <a href="index.php">
+             <h1>Tute</h1>
+           </a>
+         </div>
+         <div class="header_right">
+           <div class="cssmenu">
+             <ul>
+               <li class="has-sub">
+                 <a href="index.php">
+                   <span>Home</span>
+                 </a>
+               </li>
+               <li>
+                 <a href="login.php">
+                   <span>Login</span>
+                 </a>
+               </li>
+               <li class="active">
+                 <a href="registration.php">
+                   <span>Registration</span>
+                 </a>
+               </li>
+               <li class="last">
+                 <a href="contact.php">
+                   <span>Contact</span>
+                 </a>
+               </li>
+               <div class="clear"></div>
+             </ul>
+           </div>
+         </div>
+         <div class="clear"></div>
+       </div>
+     </div>
+     
+       
+
+
+       <form>
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <label for="fn"><b>First name</b></label>
+    <input type="text" placeholder="First name" name="fn" required>
+
+    <label for="ln"><b>Last name</b></label>
+    <input type="text" placeholder="Last name" name="ln" required>
+
+    <label for="course"><b>Cours</b></label>
+    <select name="course">
+           <option value="MCA">MCA</option>
+           <option value="MSc">MSc</option>
+           <option value="MTech">MTech</option>
+         </select>
+    <label for="gender"><b>Gender</b></label>
+    <select name="gender">
+           <option value="gender">Male</option>
+           <option value="gender">Female</option>
+    </select>     
+    
+    <label for="reg"><b>ID</b></label>
+    <input type="text" placeholder="Enter your ID" name="reg" required>
+
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Username" name="username" required>
+
+    <label for="phno"><b>Phone number</b></label>
+    <input type="text" placeholder="Enter phone number" name="phno" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="pw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pw" required>
+
+    <label for="cpw"><b>Repeat password</b></label>
+    <input type="password" placeholder="Repeat Password" name="cpw" required>
+    <label for="file"><b>Profile photo</b></label>
+    <input type="file" name="profile" />
+
+    <hr>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Register</button>
+    <button type="reset" class="registerbtn">Reset</button>
+
+  </div>
   
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
 </form>
-</div>
-
-</body>
-</html>
-
+     </div>
+   </body>
+ </html>
