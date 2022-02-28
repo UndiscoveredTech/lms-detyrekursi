@@ -43,7 +43,7 @@ session_start();
 	<div class="clear"></div>
 </div>
 </div>
- <div class="main_bg">
+ <div  style = "display:none" class="main_bg">
 <div class="wrap">
 <div class="wrapper">
   <div class="main_text">

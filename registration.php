@@ -123,6 +123,14 @@ a {
     <label for="ln"><b>Last name</b></label>
     <input type="text" placeholder="Last name" name="ln" required>
 
+    <!-- <label for="role"><b>Cours</b></label>
+    <select name="role">
+           <option value="ADMIN">ADMIN</option>
+           <option value="USER">USER</option>
+           <option value="SIMPLE">SIMPLE</option>
+         </select>
+      -->
+         
     <label for="course"><b>Cours</b></label>
     <select name="course">
            <option value="MCA">MCA</option>

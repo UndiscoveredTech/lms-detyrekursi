@@ -12,6 +12,8 @@ $un="root";
    $res=mysqli_query($conn, $get);
    while($r=mysqli_fetch_object($res))
    {
+       //changes by me, gettin user_id from the qeury results
+       $user_id = $r->user_id;
       $fn= $r->first_name;
       $ln= $r->last_name;
 	  $name=$fn.' '.$ln;
@@ -30,6 +32,11 @@ $un="root";
    }
    if(mysqli_affected_rows($conn)>0)
    {
+       //Changes made by me 
+       //Store the user_id for the user actuarlly logged in, this id will after be used to check for authorization
+        $_SESSION['user_id']=$user_id;
+        //End of changes by me 
+
         $_SESSION['un']=$username;
         $_SESSION['name']=$name;
 	

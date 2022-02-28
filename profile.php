@@ -181,7 +181,7 @@ session_start();
 </div>
 </div>
 <!--E-Learning menu close-->
-<div class="main_bg">
+<div style = "display:none" class="main_bg">
 <div class="wrap">
 <div class="wrapper">
     <div class="profhead">

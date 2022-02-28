@@ -27,6 +27,9 @@
   {
       mysqli_query($conn, $query);
 	 echo '<script>alert("REGISTERED SUCCESSFULLY");window.location="login.php";</script>';
+
+    //changes by me get the last row inserted and set the selected role to the db
+
   }
   else
   {
