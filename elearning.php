@@ -57,12 +57,15 @@ if ($_SESSION['un'] == "") {
 				<span>
 					<?PHP echo $_SESSION['user_id']; ?>
 				</span>
+				<span>
+					<?PHP echo $_SESSION['role_id']; ?>
+				</span>
 			</div>
 			<div class="profile"><?PHP echo '<img src="profile_upload/' . $_SESSION['pic'] . '"height"40px" width="40px" alt="' . $_SESSION['pic'] . '"/>'; ?></div>
 		</div>
 
 
-		<div class="main_bg">
+		<div style = "margin-top:120px" class="main_bg">
 			<div class="wrap">
 				<div class="wrapper">
 					<div class="main">

@@ -112,7 +112,7 @@ a {
        
 
 
-       <form>
+       <form action="store.php" method="post"> 
   <div class="container">
     <h1>Register</h1>
     <p>Please fill in this form to create an account.</p>
@@ -123,13 +123,14 @@ a {
     <label for="ln"><b>Last name</b></label>
     <input type="text" placeholder="Last name" name="ln" required>
 
-    <!-- <label for="role"><b>Cours</b></label>
+    <br>
+    <label for="role"><b>ROLE</b></label>
     <select name="role">
            <option value="ADMIN">ADMIN</option>
            <option value="USER">USER</option>
            <option value="SIMPLE">SIMPLE</option>
-         </select>
-      -->
+    </select>
+     <br><br><br>
          
     <label for="course"><b>Cours</b></label>
     <select name="course">

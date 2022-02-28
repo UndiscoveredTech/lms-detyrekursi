@@ -35,6 +35,17 @@ $un="root";
        //Changes made by me 
        //Store the user_id for the user actuarlly logged in, this id will after be used to check for authorization
         $_SESSION['user_id']=$user_id;
+
+        //get role id for user_id
+        $query_fetch_role_id = "select role_id from system_users_to_roles ur where ur.user_id = $user_id ";
+        $fetch_role_id_result = mysqli_query($conn,$query_fetch_role_id) or die('Invalid query: ' . mysqli_error());
+        while ($row_role = mysqli_fetch_assoc($fetch_role_id_result)) {
+          //here we get the value for the role id selected
+          $role_id = $row_role['role_id'];
+          $_SESSION['role_id'] = $role_id;
+          
+          // echo $row['user_id'];     
+        }
         //End of changes by me 
 
         $_SESSION['un']=$username;
