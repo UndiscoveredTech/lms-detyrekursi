@@ -1,18 +1,16 @@
 <?php
      session_start();
 
-//$un="root";
-//  $upw="password";
-//  $host="localhost";
-//  $conn = mysqli_connect($host,$un,$upw);
-//  mysqli_select_db($conn, "luarasi-lms");
-//   $subject= $_POST['subject'];
-//   $logo_upload = $_FILES['logo']['name'];
-//   $target2 = "Logo_upload/".$logo_upload;
-//   move_uploaded_file($_FILES['logo']['tmp_name'],$target2);
-//   $query= "insert into subject_master values('','$subject','$logo_upload')";
-//   echo '<script>alert("UPLOAD SUCCESSFULLY");window.location="subject_master.php";</script>';
-//   mysqli_query($conn, $query);
+$un="root";
+ $upw="password";
+ $host="localhost";
+ $conn = mysqli_connect($host,$un,$upw);
+ mysqli_select_db($conn, "luarasi-lms");
+  $subject= $_POST['subject'];
+  $logo_upload = $_FILES['logo']['name'];
+  $target2 = "Logo_upload/".$logo_upload;
+  move_uploaded_file($_FILES['logo']['tmp_name'],$target2);
+  
     require_once('luarasi-lms/db_function.php');
     require_once('luarasi-lms/system_permissions.php');
 
@@ -20,28 +18,39 @@
     $http_verb = $_SERVER['REQUEST_METHOD'];
     $params    = json_decode(file_get_contents('php://input')); 
 
-    echo '<script>alert('.$http_verb.');</script>';
+    // echo '<script>alert('.$http_verb.');</script>';
 
     if ($http_verb == 'POST') {
 
-if (checkPermissions($_SESSION['user_id'], 1) == "false") {
-            header("HTTP/1.0 403 Forbidden");
-            echo '{"error": "You do not have permissions to create a product."}' . '\n';
-            exit();
-}
+        /**
+         * permission_id : 
+         * 1-> create
+         * 2-> edit
+         * 3-> delete
+         * 5-> list
+         */
+    
+        if (checkPermissions($_SESSION['user_id'], 1) == "false") {
+                    header("HTTP/1.0 403 Forbidden");
+                    echo '{"error": "You do not have permissions to create a product."}' . '\n';
+                    exit();
+        }
         $subject = $_POST['subject'];
 
-        $sql = "INSERT INTO `subject_master`(`sub_id`, `subject`, `logo`) VALUES (1,$subject,'pafoto')";
+        // $sql = `INSERT INTO subject_master VALUES('','$subject','pafoto')`;
 
         // $data = [ 
-        //         'subject' => $params->subject,
+        //         'subject' => 'ademm'
         //         ];   
+        $query= "insert into subject_master values('','$subject','$logo_upload')";
+        echo '<script>alert("UPLOAD SUCCESSFULLY");window.location="subject_master.php";</script>';
+        mysqli_query($conn, $query);
+        //mysqli_query($pdo, $sql);
 
-        $stmt = $pdo->prepare($sql);
+        // $stmt = $pdo->prepare($sql);
         // $stmt->execute($data);  
 
-        echo '{"message": "Product created successfully."}' . '\n';
-
+        // echo '{"message": "Product created successfully."}' . '\n';
     } elseif ($http_verb == 'GET') {
 
         $me = checkPermissions(2, 4);

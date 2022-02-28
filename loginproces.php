@@ -42,8 +42,9 @@ $un="root";
         while ($row_role = mysqli_fetch_assoc($fetch_role_id_result)) {
           //here we get the value for the role id selected
           $role_id = $row_role['role_id'];
+          //set role id on session and access it
           $_SESSION['role_id'] = $role_id;
-          
+
           // echo $row['user_id'];     
         }
         //End of changes by me 

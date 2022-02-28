@@ -46,12 +46,12 @@
 <div class="wrap">
 <div class="wrapper"></div>
 </div>
-<div class="main_bg">
+<div style ="margin-top: 120px"  class="main_bg">
 <div class="wrap">
 <div class="wrapper">
 	<div class="main">
 		<div id="form_design" style="background-color:#D4E7F5;width:620px; border-radius:20px; position:center; ">
-			     <form action="subject_process.php" method="post" enctype="multipart/form-data">
+			     <form action="subject_process.php" method="POST" enctype="multipart/form-data">
 				  
 				   <table width="414" border="0" cellpadding="5" cellspacing="10" align="center">
 				     <tr>

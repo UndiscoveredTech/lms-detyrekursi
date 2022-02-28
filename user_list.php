@@ -1,7 +1,10 @@
 <?php
      session_start();
+	 require_once('luarasi-lms/db_function.php');
+     require_once('luarasi-lms/system_permissions.php');
+     
 	 
-     if($_SESSION['admin_session']=="")
+	 if($_SESSION['admin_session']=="")
 	 {
 	 	header('location:admin_login.php');
 	 }
@@ -20,6 +23,19 @@
 
 	if(isset($_GET['delete_id']))
 	{	
+		/**
+         * permission_id : 
+         * 1-> create
+         * 2-> edit
+         * 3-> delete
+         * 5-> list
+         */
+    
+        if (checkPermissions($_SESSION['user_id'], 3) == "false") {
+			header("HTTP/1.0 403 Forbidden");
+			echo '{"error": "You do not have permissions to delete a user."}' . '\n';
+			exit();
+}
 		$delete_id = $_GET['delete_id'];
 		$delete = "delete from registration where register_no = '$delete_id ' ";
 		mysqli_query($conn, $delete);
@@ -30,6 +46,8 @@
 	}
 	if(isset($_GET['accept_id']))
 	{
+
+		//add checkPermissions here for acceptin a user. Only admin can accept or delete a user from list
 		$accept_id = $_GET['accept_id'];
 		$update = "update registration set status = 'accept' where register_no = '$accept_id '";
 		mysqli_query($conn, $update);
@@ -37,6 +55,7 @@
 		{
 			echo '<script>alert("Status changes succesfuly");window.location="user_list.php";</script>';
 		}
+
 	}
 ?>
 <!DOCTYPE HTML>
